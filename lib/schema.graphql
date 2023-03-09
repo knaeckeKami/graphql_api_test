@@ -1,0 +1,10 @@
+scalar Upload
+
+type UploadReturn {
+    success: Boolean!
+    information: String!
+}
+
+type Mutation {
+    uploadFile(file: Upload!): UploadReturn!
+}
